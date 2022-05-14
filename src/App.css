@@ -1,38 +1,95 @@
-.App {
-  text-align: center;
+.App{
+  /* background-color: hsl(180, 29%, 50%); */
+  background-color: hsl(180, 53%, 92%);
+  /* background-color:hsl(180, 8%, 52%);
+  background-color: hsl(180, 14%, 20%); */
+  font-family: 'League Spartan', sans-serif;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header{
+  
+  background-image: url(../public/images/bg-header-desktop.svg);
+  background-repeat: no-repeat;
+  padding: 5%;
+  background-size: cover;
+  background-color: hsl(180, 29%, 50%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.info{
+  margin: 10%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  padding: 2%;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.row{
+  width: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-around;
+
+}
+.row::after{
+  display: table;
+  clear: both;
+  content: "";
+} 
+
+.col-2{width: 12%;}
+.col-5{width: 44%;}
+
+.rightposition{
+  text-align: right;
+}
+
+.bluetext{
+  color: hsl(180, 29%, 50%) ;
+  display: inline;
+}
+
+.line{
+  margin: 2%;
+}
+
+.greytext{
+  color: hsl(0, 0%, 55%);
+}
+
+.tag{
+  display:inline;
+  color: hsl(180, 29%, 50%);
+  background-color: hsl(180, 53%, 92%);
+  margin: 1.5%;
+  font-size:12px;
+  padding: 1.5%;
+  border-radius: 5px;
+}
+
+.specificity{
+  display:inline;
+  margin: 1.5%;
+  font-size:12px;
   color: white;
+  border-radius: 10px;
+  padding: 0.5%;
+  padding-left: 1%;
+  padding-right: 1%;
 }
 
-.App-link {
-  color: #61dafb;
+.new{
+  background-color: hsl(180, 29%, 50%);
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.featured{
+  background-color: hsl(180, 14%, 20%);
+}
+
+.additionalshadow{
+  box-shadow: hsl(180, 29%, 50%) -5px 0px, rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
